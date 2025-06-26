@@ -1,0 +1,123 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.mainContainer {
+  background-color: black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include respond-lg {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+.container {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include respond-lg {
+    flex-direction: row;
+    gap: 18px;
+  }
+}
+
+.spotlight {
+  width: 100%;
+  min-height: 376px;
+  background: linear-gradient(134.52deg, #ecf7f1 65.53%, #fff1e6 89.2%);
+  padding: 60px 40px;
+  border-radius: 20px;
+
+  @include respond-lg {
+    flex: 1;
+    max-width: 400px;
+    padding: 71px 46px 20px 35px;
+    min-height: 476px;
+  }
+
+  @include respond-xl {
+    flex: 1;
+    max-width: 526px;
+    padding: 91px 66px 20px 55px;
+    min-height: 476px;
+  }
+
+  span {
+    display: inline-block;
+    font-weight: 900;
+    color: $green;
+    background-color: rgba($green, 0.1);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    padding: 5px 12px;
+    border: 1px solid $green;
+    border-radius: 50px;
+
+    @include respond-lg {
+      @include flex-center;
+      width: 157px;
+      height: 37px;
+      font-size: 11px;
+    }
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+
+    @include respond-lg {
+      font-size: 32px;
+      line-height: 150%;
+      max-width: 216px;
+      margin-top: 76px;
+      margin-bottom: 28px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 180%;
+  }
+}
+
+.imageGroup {
+  display: flex;
+  gap: 18px;
+  flex-direction: row;
+  width: 100%;
+  min-height: 256px;
+
+  img {
+    object-fit: cover;
+  }
+
+  @include respond-lg {
+    flex: 1;
+  }
+}
+
+.twoImages {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+  flex: 1;
+}
+
+.singleImage {
+  flex: 1;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.half {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}

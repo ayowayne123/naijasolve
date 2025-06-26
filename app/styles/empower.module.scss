@@ -1,0 +1,172 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.container {
+  @include container;
+  padding-top: 80px;
+
+  @include respond-md {
+    padding-top: 80px;
+  }
+  @include respond-lg {
+    padding-top: 130px;
+  }
+}
+
+.grid {
+  @include respond-md {
+    @include grid-columns(2);
+  }
+
+  p {
+    font-weight: 400;
+    margin: 20px 0;
+
+    line-height: 200%;
+    @include respond-md {
+      margin: 0;
+      font-size: 19px;
+    }
+  }
+  h4 {
+    font-weight: 800;
+    font-size: 24px;
+    max-width: 360px;
+    line-height: 150%;
+    letter-spacing: 0%;
+
+    @include respond-lg {
+      font-size: 32px;
+      max-width: 468px;
+    }
+  }
+}
+
+.cardGrid {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-top: 50px;
+  @include grid-columns(1, 52px);
+
+  @include respond-md {
+    @include grid-columns(3, 52px);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 130px;
+    padding-top: 80px;
+  }
+  overflow-x: scroll;
+  overflow-x: scroll;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome/Safari/WebKit */
+  }
+}
+@mixin cardVariant($color) {
+  border-color: $color;
+  background-color: rgba($color, 0.1);
+  h4 {
+    color: $color;
+  }
+}
+
+.card {
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 30px;
+  width: 100%;
+  height: 321px;
+
+  @include respond-md {
+    padding-top: 42px;
+    padding-left: 58px;
+    padding-right: 30px;
+    width: 406px;
+    height: 321px;
+  }
+  @include respond-lg {
+    padding-top: 62px;
+    padding-left: 73px;
+    padding-right: 37px;
+    width: 436px;
+    height: 321px;
+  }
+
+  border-radius: 20px;
+  border-width: 1px;
+  border-style: solid;
+
+  position: relative;
+
+  h4 {
+    font-weight: 400;
+
+    font-size: 24px;
+    line-height: 200%;
+    letter-spacing: 0%;
+  }
+
+  p {
+    font-weight: 800;
+
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0%;
+    max-width: 245px;
+    margin-top: 35px;
+  }
+}
+
+.iconContainer {
+  position: absolute;
+  top: 140px;
+  right: 30px;
+  width: 88px;
+  height: 90px;
+
+  z-index: 2;
+
+  @include respond-lg {
+    position: absolute;
+    top: 140px;
+    left: 300px;
+    width: 98px;
+    height: 101px;
+
+    z-index: 2;
+  }
+}
+
+.icon {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.card1 {
+  @extend .card;
+  @include cardVariant($orange);
+}
+
+.card2 {
+  @extend .card;
+  @include cardVariant($blue);
+  p {
+    @include respond-lg {
+      width: 150px;
+    }
+  }
+}
+
+.card3 {
+  @extend .card;
+  @include cardVariant($green);
+}

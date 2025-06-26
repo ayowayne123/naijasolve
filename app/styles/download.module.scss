@@ -1,0 +1,62 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.container {
+  @include flex-center;
+  @include flex-column;
+  width: 100%;
+  background-color: black;
+  height: 654px;
+  color: white;
+  padding: 20px 30px;
+  gap: 40px;
+
+  @include respond-lg {
+    padding: 20px 50px;
+    gap: 40px;
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 200%;
+    text-align: center;
+
+    @include respond-lg {
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 200%;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 200%;
+    @include respond-lg {
+      width: 500px;
+    }
+
+    @include respond-lg {
+      width: 790px;
+
+      letter-spacing: 0%;
+    }
+  }
+
+  .button {
+    font-weight: 700;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    background-color: $green;
+    color: white;
+
+    width: 193px;
+    height: 43px;
+    font-size: 16px;
+    border-radius: 40px;
+  }
+}

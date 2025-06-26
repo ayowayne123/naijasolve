@@ -1,0 +1,160 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.container {
+  @include container;
+}
+
+.title {
+  font-weight: 900;
+
+  text-align: center;
+  @include flex-center;
+  flex-direction: column;
+  gap: 1px;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 131%;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 60px auto 0;
+
+  @include respond-md {
+    max-width: 396px;
+    margin: 50px auto 0;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+  @include respond-lg {
+    max-width: 396px;
+    margin: 60px auto 0;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+}
+
+.text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 24px 10px;
+  @include respond-md {
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+  @include respond-lg {
+    max-width: 800px;
+    margin: 24px auto;
+    font-size: 18px;
+  }
+}
+
+.buttonDiv {
+  @include flex-center;
+  gap: 16px;
+  padding-top: 10px;
+  flex-direction: column;
+
+  @include respond-lg {
+    gap: 28px;
+    flex-direction: row;
+  }
+  @include respond-md {
+    flex-direction: row;
+  }
+}
+
+.button {
+  @include flex-center;
+
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 40px;
+  width: 238px;
+  height: 56px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  border: solid 1px transparent;
+
+  @include respond-lg {
+    font-size: 16px;
+    width: 238px;
+    height: 56px;
+    border-radius: 40px;
+  }
+}
+
+.buttonPry {
+  @extend .button;
+  background-color: $green;
+  color: white;
+}
+
+.buttonPry:hover {
+  background-color: $white;
+  border: solid 1px black;
+  color: black;
+}
+
+.buttonSec {
+  @extend .button;
+  background-color: $white;
+  border: solid 1px black;
+}
+
+.buttonSec:hover {
+  background-color: $green;
+  color: white;
+  border: solid 1px transparent;
+}
+
+.numbersDiv {
+  @include flex-center;
+  gap: 16px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+
+  @include respond-md {
+    gap: 60px;
+    margin-top: 44px;
+    margin-bottom: 0;
+  }
+  @include respond-lg {
+    gap: 110px;
+    margin-top: 94px;
+    margin-bottom: 0;
+  }
+}
+
+.numbersCol {
+  @include flex-center;
+  @include flex-column;
+
+  h4 {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: $orange;
+    @include respond-md {
+      font-size: 24px;
+    }
+  }
+  p {
+    max-width: 156px;
+    @include flex-center;
+    text-align: center;
+    line-height: 120%;
+    font-size: 14px;
+    @include respond-md {
+      font-size: 16px;
+    }
+  }
+}

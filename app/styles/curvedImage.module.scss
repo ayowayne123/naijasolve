@@ -1,0 +1,102 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.container {
+  height: 360px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  @include respond-sm {
+    height: 360px;
+  }
+
+  @include respond-md {
+    height: 420px;
+  }
+
+  @include respond-lg {
+    height: 500px;
+  }
+}
+
+.innerContainer {
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.imageDiv {
+  position: relative;
+  height: 100%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+
+  // Default width for mobile
+  width: 80%;
+
+  @include respond-md {
+    width: 60%;
+  }
+
+  @include respond-lg {
+    width: 40%;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.topArc,
+.bottomArc {
+  position: absolute;
+
+  left: -200px;
+  background: $white;
+  pointer-events: none;
+  z-index: 2;
+  width: 1027px;
+  height: 238px;
+
+  @include respond-sm {
+    height: 200px;
+  }
+
+  @include respond-md {
+    height: 250px;
+  }
+
+  @include respond-lg {
+    height: 300px;
+    width: 104%;
+    left: -2%;
+  }
+}
+
+.topArc {
+  top: -160px;
+  @include respond-sm {
+    top: -160px;
+  }
+
+  border-bottom-left-radius: 100% 100%;
+  border-bottom-right-radius: 100% 100%;
+}
+
+.bottomArc {
+  bottom: -160px;
+  @include respond-sm {
+    bottom: -160px;
+  }
+  border-top-left-radius: 100% 100%;
+  border-top-right-radius: 100% 100%;
+}

@@ -1,0 +1,22 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.header {
+  @include flex-center;
+  padding: 1rem;
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @include respond-sm {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  @include respond-md {
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  @include respond-lg {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+}

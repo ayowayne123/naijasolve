@@ -1,0 +1,106 @@
+@use "variables.scss" as *;
+@use "mixins.scss" as *;
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  @include flex-center;
+
+  @include container;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  flex-direction: column;
+
+  border-top: 0.5px solid white;
+
+  @include respond-sm {
+    @include flex-center;
+    flex-direction: column;
+
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  @include respond-md {
+    @include flex-between;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 25px;
+  }
+  @include respond-lg {
+    @include flex-between;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.container {
+  p {
+    text-align: center;
+    font-size: 16px;
+    @include respond-md {
+      font-size: 16px;
+      text-align: left;
+    }
+    @include respond-lg {
+      font-size: 18px;
+      text-align: left;
+    }
+    @include respond-xl {
+      font-size: 20px;
+      text-align: left;
+    }
+    line-height: 200%;
+  }
+}
+
+.socials {
+  @include respond-md {
+    margin-top: 12px;
+    margin-bottom: 42px;
+    align-items: start;
+  }
+  display: flex;
+
+  gap: 28px;
+}
+
+.socialBorder {
+  @include flex-center;
+  border: 2px solid white;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  margin-top: 2px;
+}
+
+.mainDiv {
+  @include flex-center;
+  flex-direction: column;
+  gap: 20px;
+
+  @include respond-md {
+    align-items: start;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.logo {
+  position: relative;
+  display: flex;
+  width: 281px;
+  height: 60px;
+  margin-bottom: 72px;
+
+  img {
+    object-fit: contain;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
