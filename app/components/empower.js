@@ -9,10 +9,10 @@ function Empower() {
     <>
       <section className={styles.container}>
         <div className={styles.grid}>
-          <h4 data-aos="zoom-in">
+          <h4 data-aos="fade-up">
             NaijaSolve empowers people—not just fixes problems.
           </h4>
-          <p data-aos="fade-left" data-aos-delay="400">
+          <p data-aos="fade-up" data-aos-delay="400">
             NaijaSolve empowers everyday Nigerians to lead change in their
             communities with funding, mentorship, and support. We don&apos;t
             wait for solutions — we build them, one project at a time.
@@ -20,7 +20,7 @@ function Empower() {
         </div>
       </section>
       <div className={styles.cardGrid}>
-        <div className={styles.card1} data-aos="fade-left" data-aos-delay="300">
+        <div className={styles.card1} data-aos="fade-up">
           <h4 className={styles.number}>01</h4>
           <div className={styles.iconContainer}>
             <div className={styles.icon}>
@@ -30,7 +30,7 @@ function Empower() {
 
           <p>We are producing the next generation of problem solvers</p>
         </div>
-        <div className={styles.card2} data-aos="fade-left" data-aos-delay="600">
+        <div className={styles.card2} data-aos="fade-up">
           <h4 className={styles.number}>02</h4>
           <div className={styles.iconContainer}>
             <div className={styles.icon}>
@@ -40,7 +40,7 @@ function Empower() {
 
           <p>We Mobilize funds for them</p>
         </div>
-        <div className={styles.card3} data-aos="fade-left" data-aos-delay="900">
+        <div className={styles.card3} data-aos="fade-up">
           <h4 className={styles.number}>03</h4>
           <div className={styles.iconContainer}>
             <div className={styles.icon}>

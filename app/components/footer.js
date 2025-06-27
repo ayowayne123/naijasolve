@@ -5,6 +5,7 @@ import logo from "@/public/logoWhite.png";
 import Link from "next/link";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
 import { RiLinkedinLine } from "react-icons/ri";
 
 function Footer() {
@@ -22,25 +23,32 @@ function Footer() {
           <p>Connect With Us</p>
           <div className={styles.socials}>
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/naijasolve/"
               target="_blank"
               className={styles.socialBorder}
             >
               <RiLinkedinLine size={18} />
             </Link>
             <Link
-              href="https://instagram.com"
+              href=" https://www.instagram.com/naijasolve"
               target="_blank"
               style={{ verticalAlign: "middle" }}
             >
               <IoLogoInstagram size={30} />
             </Link>
             <Link
-              href="https://linkedin.com"
+              href="https://x.com/NaijaSolve"
               target="_blank"
               className={styles.socialBorder}
             >
               <FaXTwitter size={18} />
+            </Link>
+            <Link
+              href="https://www.facebook.com/share/1KhazTsSYp/"
+              target="_blank"
+              className={styles.socialBorder}
+            >
+              <FaFacebookF size={18} />
             </Link>
           </div>
           <p>Have a question?</p>

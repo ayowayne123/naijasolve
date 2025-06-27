@@ -25,7 +25,21 @@ function Hero() {
           data-aos="flip-up"
           data-aos-delay="300"
           className={styles.buttonPry}
-          href="/"
+          href={`mailto:hello@naijasolve.org?subject=Interest%20in%20Supporting%20NaijaSolve&body=${encodeURIComponent(
+            `Hello NaijaSolve Team,
+      
+      I recently came across your initiative and was truly inspired by the work you're doing to empower communities through grassroots solutions.
+      
+      I'd love to support your mission as a [Funder / Resource Person / Media Partner / Other - please specify], and I'm eager to learn how I can contribute meaningfully.
+      
+      Looking forward to hearing from you.
+      
+      Thank you for all you do!
+      
+      Best regards,
+      [Your Name]
+      [Your Contact Info]`
+          )}`}
         >
           Count Me In
         </Link>

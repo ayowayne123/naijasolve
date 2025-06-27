@@ -9,11 +9,7 @@ function Highlights() {
   return (
     <section className={styles.mainContainer}>
       <div className={styles.container}>
-        <div
-          data-aos="fade-left"
-          data-aos-delay="300"
-          className={styles.spotlight}
-        >
+        <div data-aos="fade-up" className={styles.spotlight}>
           <span className={styles.tag}>coming soon</span>
           <h4>Project Spotlights</h4>
           <p>
@@ -23,26 +19,14 @@ function Highlights() {
         </div>
         <div className={styles.imageGroup}>
           <div className={styles.twoImages}>
-            <div
-              data-aos="fade-left"
-              data-aos-delay="400"
-              className={styles.half}
-            >
+            <div data-aos="fade-up" className={styles.half}>
               <Image src={classroom} alt="an empty classroom" fill />
             </div>
-            <div
-              data-aos="fade-left"
-              data-aos-delay="500"
-              className={styles.half}
-            >
+            <div data-aos="fade-up" className={styles.half}>
               <Image src={highway} alt="an empty classroom" fill />
             </div>
           </div>
-          <div
-            className={styles.singleImage}
-            data-aos="flip-down"
-            data-aos-delay="800"
-          >
+          <div className={styles.singleImage} data-aos="fade-up">
             <Image src={publicTap} alt="an empty classroom" fill />
           </div>
         </div>

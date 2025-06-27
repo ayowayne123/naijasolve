@@ -27,9 +27,7 @@ function HowItWorks() {
   return (
     <section className={styles.mainContainer}>
       <div className={styles.container}>
-        <h4 data-aos="flip-down" data-aos-easing="ease-in-sine">
-          How It Works
-        </h4>
+        <h4 data-aos="fade-up">How It Works</h4>
         <div
           className={`${styles.stepsContainer} ${inView ? styles.animate : ""}`}
           ref={containerRef}

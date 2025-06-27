@@ -15,9 +15,15 @@ function Download() {
         following to transform communities across Nigeria. It&apos;s more than a
         PDF—it&apos;s our heartbeat.
       </p>
-      <button data-aos="flip-up" data-aos-delay="500" className={styles.button}>
-        download
-      </button>
+      <a href="/vision.pdf" download>
+        <button
+          data-aos="flip-up"
+          data-aos-delay="500"
+          className={styles.button}
+        >
+          download
+        </button>
+      </a>
     </section>
   );
 }

@@ -6,12 +6,7 @@ import { PiTarget } from "react-icons/pi";
 function Vision() {
   return (
     <section className={styles.container}>
-      <div
-        data-aos="fade-right"
-        data-aos-easing="ease-in-sine"
-        data-aos-anchor-placement="top-bottom"
-        className={styles.card}
-      >
+      <div data-aos="fade-up" className={styles.card}>
         <div className={styles.icon1}>
           <PiTarget size={32} />
         </div>
@@ -21,12 +16,7 @@ function Vision() {
           solution, one street, one community at a time.
         </p>
       </div>
-      <div
-        data-aos="fade-left"
-        data-aos-easing="ease-in-sine"
-        data-aos-anchor-placement="top-bottom"
-        className={styles.card}
-      >
+      <div data-aos="fade-up" className={styles.card}>
         <div className={styles.icon2}>
           <FiCompass size={32} />
         </div>
