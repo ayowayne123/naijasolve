@@ -22,7 +22,7 @@ function Hero() {
 
       <div className={styles.buttonDiv}>
         <Link
-          data-aos="flip-up"
+          data-aos="fade-up"
           data-aos-delay="300"
           className={styles.buttonPry}
           href={`mailto:hello@naijasolve.org?subject=Interest%20in%20Supporting%20NaijaSolve&body=${encodeURIComponent(
@@ -44,8 +44,7 @@ function Hero() {
           Count Me In
         </Link>
         <Link
-          data-aos="flip-down"
-          data-aos-delay="500"
+          data-aos="fade-up"
           className={styles.buttonSec}
           href="https://bit.ly/NaijaSolveApply"
           target="_blank"
