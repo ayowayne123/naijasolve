@@ -23,7 +23,6 @@ function Hero() {
       <div className={styles.buttonDiv}>
         <Link
           data-aos="fade-up"
-          data-aos-delay="300"
           className={styles.buttonPry}
           href={`mailto:hello@naijasolve.org?subject=Interest%20in%20Supporting%20NaijaSolve&body=${encodeURIComponent(
             `Hello NaijaSolve Team,
@@ -54,11 +53,7 @@ function Hero() {
         </Link>
       </div>
 
-      <div
-        data-aos="fade-up"
-        data-aos-delay="300"
-        className={styles.numbersDiv}
-      >
+      <div data-aos="fade-up" className={styles.numbersDiv}>
         <div className={styles.numbersCol}>
           <h4>
             <CountUp end={25} duration={3} />+
