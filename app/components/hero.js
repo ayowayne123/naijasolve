@@ -68,7 +68,7 @@ function Hero() {
         </div>
         <div className={styles.numbersCol}>
           <h4>
-            $<CountUp end={100000} duration={2} separator="," />
+            $<CountUp end={20000} duration={2} separator="," />
           </h4>
           <p>Capital Mobilized</p>
         </div>

@@ -3,6 +3,7 @@ import styles from "@/app/styles/empower.module.scss";
 import Image from "next/image";
 import moneyHand from "@/public/moneyHand.png";
 import people from "@/public/people.png";
+import ribbon from "@/public/ribbon.png";
 
 function Empower() {
   return (
@@ -44,7 +45,7 @@ function Empower() {
           <h4 className={styles.number}>03</h4>
           <div className={styles.iconContainer}>
             <div className={styles.icon}>
-              <Image src={moneyHand} alt="moneyHand" fill />
+              <Image src={ribbon} alt="ribbon" fill />
             </div>
           </div>
 
