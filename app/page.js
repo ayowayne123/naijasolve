@@ -16,7 +16,9 @@ import Highlights from "./components/highlights";
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      once: true, // animate only once on scroll
+      duration: 700,
+      easing: "ease-in-out",
+      once: true,
     });
   }, []);
   return (

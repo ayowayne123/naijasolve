@@ -49,7 +49,7 @@ function Empower() {
             </div>
           </div>
 
-          <p>We are producing the next generation of problem solvers</p>
+          <p>We celebrate community heroes</p>
         </div>
       </div>
     </>
