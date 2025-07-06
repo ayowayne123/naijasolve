@@ -56,13 +56,13 @@ function Hero() {
       <div data-aos="fade-up" className={styles.numbersDiv}>
         <div className={styles.numbersCol}>
           <h4>
-            <CountUp end={25} duration={3} />+
+            <CountUp end={100} duration={3} />+
           </h4>
           <p>Communities Transformed</p>
         </div>
         <div className={styles.numbersCol}>
           <h4>
-            <CountUp end={10} duration={3} />+
+            <CountUp end={100} duration={3} />+
           </h4>
           <p>Community Support Managers</p>
         </div>
