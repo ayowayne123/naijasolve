@@ -26,11 +26,11 @@
   }
 
   h4 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 28px;
 
     @include respond-lg {
-      font-weight: 800;
+      font-weight: 700;
       font-size: 32px;
       line-height: 100%;
       letter-spacing: 0%;
@@ -125,7 +125,7 @@
   padding-left: 35px;
   font-size: 16px;
   color: $text-color;
-  font-weight: 700;
+  font-weight: 500;
   @include respond-lg {
     max-width: 480px;
   }

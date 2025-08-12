@@ -12,7 +12,7 @@
   @include flex-center;
   flex-direction: column;
   gap: 1px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 54px;
   line-height: 131%;
   letter-spacing: 0%;
@@ -20,7 +20,7 @@
   margin: 60px auto 0;
 
   @include respond-md {
-    max-width: 396px;
+    max-width: 426px;
     margin: 50px auto 0;
     font-size: 48px;
     line-height: 120%;
