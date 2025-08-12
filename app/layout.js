@@ -1,37 +1,12 @@
-import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 import "../app/styles/globals.scss";
 import Footer from "./components/footer";
 import Header from "./components/header";
 
-const nexa = localFont({
-  src: [
-    {
-      path: "../app/fonts/Nexa-Light.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../app/fonts/Nexa-Regular.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../app/fonts/Nexa-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-    {
-      path: "../app/fonts/Nexa-XBold.ttf",
-      weight: "800",
-      style: "normal",
-    },
-    {
-      path: "../app/fonts/Nexa-Black.ttf",
-      weight: "900",
-      style: "normal",
-    },
-  ],
-  variable: "--font-nexa",
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -80,7 +55,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${nexa.className}`}>
+      <body className={`${poppins.className}`}>
         <Header />
         {children}
         <Footer />
