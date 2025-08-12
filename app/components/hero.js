@@ -24,21 +24,22 @@ function Hero() {
         <Link
           data-aos="fade-up"
           className={styles.buttonPry}
-          href={`mailto:hello@naijasolve.org?subject=Interest%20in%20Supporting%20NaijaSolve&body=${encodeURIComponent(
-            `Hello NaijaSolve Team,
+          href="https://docs.google.com/forms/d/e/1FAIpQLScBHkfMcReSvzyg9kbhXiqlqsNOL3kZUpQEb4sfj1jn3Rp0XQ/viewform?usp=header"
+      //     {`mailto:hello@naijasolve.org?subject=Interest%20in%20Supporting%20NaijaSolve&body=${encodeURIComponent(
+      //       `Hello NaijaSolve Team,
       
-      I recently came across your initiative and was truly inspired by the work you're doing to empower communities through grassroots solutions.
+      // I recently came across your initiative and was truly inspired by the work you're doing to empower communities through grassroots solutions.
       
-      I'd love to support your mission as a [Funder / Resource Person / Media Partner / Other - please specify], and I'm eager to learn how I can contribute meaningfully.
+      // I'd love to support your mission as a [Funder / Resource Person / Media Partner / Other - please specify], and I'm eager to learn how I can contribute meaningfully.
       
-      Looking forward to hearing from you.
+      // Looking forward to hearing from you.
       
-      Thank you for all you do!
+      // Thank you for all you do!
       
-      Best regards,
-      [Your Name]
-      [Your Contact Info]`
-          )}`}
+      // Best regards,
+      // [Your Name]
+      // [Your Contact Info]`
+      //     )}`}
         >
           Count Me In
         </Link>
